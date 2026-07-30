@@ -23,7 +23,10 @@ const app = express();
 connectDB();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "http://todo-app-1-qfuw.onrender.com",
+    credentials: true,
+}));
 
 app.use('/upload', express.static(path.join(__dirname, 'uploads')));
 
