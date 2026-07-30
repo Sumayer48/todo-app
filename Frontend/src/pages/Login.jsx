@@ -8,7 +8,7 @@ function Login() {
     const [password, setPassword] = useState("");
 
     const loginUser = () => {
-        fetch("http://localhost:5000/api/v1/auth/login", {
+        fetch("https://todo-app-f1a2.onrender.com/api/v1/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -27,7 +27,7 @@ function Todos() {
         setLoading(true);
         setError("");
 
-        fetch("http://localhost:5000/api/v1/todos", {
+        fetch("http://todo-app-f1a2.onrender.com/api/v1/todos", {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -51,7 +51,7 @@ function Todos() {
 
     // Add todo      
   const addTodo = () => {
-    fetch("http://localhost:5000/api/v1/todos", {
+    fetch("https://todo-app-f1a2.onrender.com/api/v1/todos", {
       method: "POST",
       headers,
       body: JSON.stringify({
@@ -78,7 +78,7 @@ function Todos() {
 
   // Update Todo
   const updateTodo = () => {
-    fetch(`http://localhost:5000/api/v1/todos/${editingId}`, {
+    fetch(`https://todo-app-f1a2.onrender.com/api/v1/todos/${editingId}`, {
       method: "PUT",
       headers,
         body: JSON.stringify({
@@ -105,7 +105,7 @@ function Todos() {
 
   // Delete todo      
   const deleteTodo = (id) => {
-    fetch(`http://localhost:5000/api/v1/todos/${id}`, {
+    fetch(`https://todo-app-f1a2.onrender.com/api/v1/todos/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
