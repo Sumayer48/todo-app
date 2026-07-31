@@ -24,7 +24,7 @@ connectDB();
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://todo-app-1-qfuw.onrender.com",
+    origin: "https://todo-app-1-qfuw.onrender.com",
     credentials: true,
 }));
 
