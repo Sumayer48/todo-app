@@ -27,7 +27,7 @@ function Todos() {
         setLoading(true);
         setError("");
 
-        fetch("http://todo-app-f1a2.onrender.com/api/v1/todos", {
+        fetch("https://todo-app-f1a2.onrender.com/api/v1/todos", {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
