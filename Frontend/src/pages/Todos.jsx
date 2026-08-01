@@ -87,10 +87,10 @@ function Todos() {
     })
     .then((response) => response.json())
     .then((data) => {
-            
+      
       setTodos(
         todos.map((todo) =>
-          todo.id === editingId ? data.data : todo
+          todo._id === editingId ? data.data : todo
       )
     );
 
